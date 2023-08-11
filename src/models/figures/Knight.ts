@@ -12,7 +12,7 @@ export class Knight extends Figure {
   }
 
   canMove(target: Cell) : boolean {
-    if(!super.canMove(target)) {
+    if (!super.canMove(target)) {
       return false
     }
     const dx = Math.abs(this.cell.x - target.x)
