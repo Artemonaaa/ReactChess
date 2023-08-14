@@ -1,13 +1,13 @@
 import { FC } from 'react'
 import { Cell } from '../models/Cell'
 
-interface ICellProps {
+interface CellProps {
   cell: Cell,
   selected: boolean, 
   click: (cell: Cell) => void
 }
 
-const CellComponent: FC<ICellProps> = ({ cell, selected, click }) => {
+const CellComponent: FC<CellProps> = ({ cell, selected, click }) => {
   return (
     <div 
       className={["cell", cell.color, selected ? "selected" : ""].join(' ')} 

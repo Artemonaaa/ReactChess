@@ -6,14 +6,14 @@ import { Board } from '../models/Board'
 import { Cell } from '../models/Cell'
 import { Player } from '../models/Player'
 
-interface IBoardProps {
+interface BoardProps {
   board: Board,
   setBoard: (board: Board) => void,
   currentPlayer: Player | null,
   swapPlayer: () => void
 }
 
-const BoardComponent: FC<IBoardProps> = ({ board, setBoard, currentPlayer, swapPlayer }) => {
+const BoardComponent: FC<BoardProps> = ({ board, setBoard, currentPlayer, swapPlayer }) => {
   const [selectedCell, setSelectedCell] = useState<Cell | null>(null)
 
   function click(cell: Cell) {

@@ -15,6 +15,11 @@ export class King extends Figure {
     if (!super.canMove(target)) {
       return false
     }
-    return true
+    if (target.y === this.cell.y
+      && (target.x === this.cell.x + 1 || target.x === this.cell.x - 1)
+      && this.cell.isEnemy(target)) {
+        return true;
+    }
+    return false
   }
 }

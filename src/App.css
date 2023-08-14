@@ -33,20 +33,33 @@
 }
 
 .black {
-  background-color: deepskyblue;
+  background-color: rgb(78, 92, 122);
 }
 
 .white {
-  background-color: #eed4ac;
+  background-color: rgb(187, 209, 255);
 }
 
 .selected {
-  background-color: brown;
+  background-color: rgb(28, 104, 219);
 }
 
 .available {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: rgb(56, 226, 56);
+  background-color: aqua;
+}
+
+.wrraper-lost {
+  display: flex;
+  width: 422px;
+  justify-content: flex-end;
+}
+
+.lost {
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 10px ;
+  background-color: lightgray;
 }
